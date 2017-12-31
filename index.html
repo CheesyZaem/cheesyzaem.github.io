@@ -1,25 +1,209 @@
 <!DOCTYPE html>
 <html>
-    <body style="background-image:url(https://cdn.discordapp.com/attachments/242175117831045121/392961138247073802/floating-light-pink-stars-fade-in-and-out-against-a-pink-backdrop-looping-motion-background_spv1hisg.png); background-size: cover; background-repeat: no-repeat;">
-        <font size="18" style="background:-webkit-linear-gradient(#EAE7ED, #B793E6, #646ECB, #3532A7); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"><strong> Candy Music </strong></font>
-        <br>
-        <br>
-        <text1 size="3" style="color:#ff6600">Candy Music is a music bot developed using Discord.JS library. It has several cool features in it, and of course more in the future. The bot is playing high quality music which can rarely be found in other music bots. I hope you enjoy using this music bot, and if you encounter any problems, feel free to ask for help in the support server - everything you need can be found from the help command.</text1>
-        <br>
-        <font size="4"><center><strong><b1 style="color:#FF0000">▂</b1> <b2 style="color:#FF7F00">▃</b2> <b3 style="color:#FFFF00">▄</b3> <b4 style="color:#00FF00">▆</b4> <feature style="color:#ff7f50"><u>Features</u></feature> <b5 style="color:#0000FF">▆</b5> <b6 style="color:#4B0082">▄</b6> <b7 style="color:#9400D3">▃</b7> <b8 style="color:#FF1493">▂</b8</strong></center></font>
-        <br>
-        <font style= "font-family: "Comic Sans MS", cursive, sans-serif;><br><f1 size="3" style="color:#ffc300";>» High quality music.</f1>
-        <br><f2 size="3" style="color:#FF9F68";>» Loop feature.</f2>
-        <br><f3 size="3" style="color:#F85959";>» Allows up to 3 hours item from YouTube.</f3>
-        <br><f4 size="3" style="color:#AC005D";>» YouTube playlist support.</f4>
-        <br><f5 size="3" style="color:#ffc300";>» Fair skip, votes required to skip.</f5>
-        <br><f6 size="3" style="color:#FF9F68";>» Allows up to 100 items in queue at once.</f6>
-        <br><f7 size="3" style="color:#F85959";>» Customizable prefix.</f7>
-        <br><f8 size="3" style="color:#AC005D";>» Constantly being updated.</f8>
-        <br><f9 size="3" style="color:#ffc300";>» More incoming!</f9></font>
-        <br>
+	
+	
+	<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Candy Music</title>
+<script>
+	var symbols = ["▃", "▄", "▅", "▆", "▇", "█"];
+	setInterval(() => {
+	document.title = symbols[Math.floor(Math.random()*symbols.length)] +" " + symbols[Math.floor(Math.random()*symbols.length)] + " " + symbols[Math.floor(Math.random()*symbols.length)] + " Candy Music " + symbols[Math.floor(Math.random()*symbols.length)] + " " + symbols[Math.floor(Math.random()*symbols.length)] + " " + symbols[Math.floor(Math.random()*symbols.length)];
+	}, 250)
+	</script>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/styles.css">
+<link href="https://file.myfontastic.com/V3TBBQQPGmrtsJyQskfBVn/icons.css" rel="stylesheet">
+
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+            @-webkit-keyframes pfp {
+              0%  {bottom:0px; top:0px;}
+              50% {bottom:20px; top:0px;}
+              100% {bottom:40px; top:0px;}
+            }
+
+            @keyframes pfp {
+              0%  {bottom:0px; top:0px;}
+              50% {bottom:20px; top:0px;}
+              100% {bottom:40px; top:0px;}
+            }
+    </style>
+</head>
+
+
+	<body>
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="container"> 
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="index.html"><img src="img/icon.png" width="100" height="100"></img><strong></strong></a> </div>
+          
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#home" class="page-scroll">Home</a></li>
+              <li><a href="#features-section" class="page-scroll">Features</a></li>
+              <li><a href="#about-section" class="page-scroll">About</a></li>
+              <li><a href="#contact-section" class="page-scroll">Contact</a></li>
+              <li><a href="#invite-section" class="page-scroll">Invite</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse --> 
         </div>
-        </article>
-        <br>
-        <br>
+        <!-- /.container-fluid --> 
+      </nav>
+      </body>
+      <!-- style="background-image:url(https://cdn.discordapp.com/attachments/242175117831045121/392961138247073802/floating-light-pink-stars-fade-in-and-out-against-a-pink-backdrop-looping-motion-background_spv1hisg.png); background-size: cover; background-repeat: no-repeat;" -->
+<body>
+        <header class="text-center" name="home">
+                <div class="intro-text">
+                  <img src="img/pfp.png" style="border-radius: 50%; position: relative; -webkit-animation-name: pfp; -webkit-animation-duration: 3.0s; animation-name: pfp; animation-duration: 3.0s; animation-iteration-count: infinite; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; animation-direction: alternate; animation-delay: 0s;" width="128px" height="128px"></img><br><br><br>
+                  
+                  <h1>Welcome to <strong>Candy Music</strong></h1>
+                  <p2>We provide high quality music on Discord.</p2><br><br>
+                  <a href="#invite-section" class="btn btn-default btn-lg page-scroll">INVITE NOW</a> </div>
+              </header>
+              
+	<!-- features section-->
+	<div id="features-section" class="text-center">
+  <div class="container">
+    <div class="features-title center">
+      <h2>Features</h2>
+      <hr>
+      <div class="clearfix"></div>
+      <p></p>
+    </div>
+    <div class="space"></div>
+    <div class="row"></div>
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-music"></i>
+        <h4>Quality</h4>
+        <p>We provide high quality music to allow everyone to enjoy the best from us.</p>
+      </div>
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-calendar"></i>
+        <h4>Development</h4>
+        <p>We update the bot constantly to make sure everything is up to date and working smoothly.</p>
+      </div>
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-gears"></i>
+        <h4>Customization</h4>
+        <p>We provide neat options that are customizable.</p>
+      </div>
+      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-refresh"></i>
+        <h4>Unlimitedness</h4>
+        <p>We allow users to queue up to 100 items at once and unlimited looping.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<!-- services section-->
+		
+		<!-- about section -->
+			<div id="about-section" class="text-center">
+				<div class="container">
+					<div class="about-title center">
+						<h2>About</h2>
+						<hr>
+							<div class="clearfix"></div>
+							<p></p>
+						</div>
+						<div class="space"></div>
+						<div class="row">
+							<div class="col-sm-4 col-md-6 col-lg-6 web"> <i class="fa fa-wrench"></i>
+							<h4>Developers</h4>
+              <p>Zaem#0569</p>
+              <p>L. T. S.#1172</p>
+              <p>Rubsad#0158</p>
+							</div>
+							<div class="col-sm-4 col-md-6 col-lg-6 web"><i class="fa fa-plus-square"></i>
+								<h4>Contributors</h4>
+                  <p>Smol#1884</p>
+                  <p>Alistar#5141</p>
+                  <p>Lauren#0529</p>
+                  <p>Wind#0582</p>
+                  <p>Gumshoe#3354</p>
+								</div>
+							</div>
+					</div>
+				</div>
+      <!--about section-->
+
+      		<!-- contact section -->
+			<div id="contact-section" class="text-center">
+				<div class="container">
+					<div class="contact-title center">
+						<h2>Contact</h2>
+						<hr>
+              <div class="clearfix"></div>
+              <p></p>
+              <div class="space"></div>
+              <p>If you wish to contact us, please click on the image below to get invited to our support server.</p>
+              <a href="https://discord.gg/82qbPBb" target="_blank"><img src="img/CI.png" /></a>
+						</div>
+					</div>
+				</div>
+      <!--contact section-->
+
+          <!-- invite section -->
+			<div id="invite-section" class="text-center">
+				<div class="container">
+					<div class="invite-title center">
+						<h2>Invite</h2>
+						<hr>
+              <div class="clearfix"></div>
+              <p></p>
+              <div class="space"></div>
+              <p>Click below to invite the bot!</p>
+              <a href="https://discordbots.org/bot/335021561973309442">
+                <img src="https://discordbots.org/api/widget/335021561973309442.svg" alt="Discord Bots" />
+              </a>
+						</div>
+					</div>
+				</div>
+      <!--contact section-->
+      
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/jquery.counterup.js"></script> 
+<script type="text/javascript" src="js/waypoints.js"></script> 
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+
+<!-- Javascripts
+    ================================================== --> 
+<script type="text/javascript" src="js/main.js"></script>
 </html>
