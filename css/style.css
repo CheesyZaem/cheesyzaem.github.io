@@ -292,6 +292,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
+<<<<<<< HEAD
 
 /* Commands Section */
 #commands-section {
@@ -347,6 +348,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: white;
 }
 
+>>>>>>> ee36b0f4011f896609bc1d432ec916caa8b4f399
 /* Footer */
 #footer {
 	background-color: #222222;
