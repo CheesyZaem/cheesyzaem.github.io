@@ -7,11 +7,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Candy Music</title>
 <script>
+
 	var symbols = ["▃", "▄", "▅", "▆", "▇", "█"];
 	setInterval(() => {
-	document.title = symbols[Math.floor(Math.random()*symbols.length)] +" " + symbols[Math.floor(Math.random()*symbols.length)] + " " + symbols[Math.floor(Math.random()*symbols.length)] + " Candy Music " + symbols[Math.floor(Math.random()*symbols.length)] + " " + symbols[Math.floor(Math.random()*symbols.length)] + " " + symbols[Math.floor(Math.random()*symbols.length)];
+  document.title = symbols[Math.floor(Math.random()*symbols.length)] +" " + symbols[Math.floor(Math.random()*symbols.length)] + " " + symbols[Math.floor(Math.random()*symbols.length)] + " Candy Music " + symbols[Math.floor(Math.random()*symbols.length)] + " " + symbols[Math.floor(Math.random()*symbols.length)] + " " + symbols[Math.floor(Math.random()*symbols.length)];
 	}, 250)
-	</script>
+  </script>
+  
 <meta name="description" content="">
 <meta name="author" content="">
 
@@ -46,15 +48,20 @@
 
     <style>
             @-webkit-keyframes pfp {
-              0%  {bottom:0px; top:0px;}
-              50% {bottom:20px; top:0px;}
-              100% {bottom:40px; top:0px;}
+		    0%  {bottom:0px;}
+		    50% {bottom:40px;}
+		    100% {bottom:0px;}
+            }
+            @keyframes pfp {
+              0%  {bottom:0px;}
+              50% {bottom:40px;}
+              100% {bottom:0px;}
             }
 
-            @keyframes pfp {
-              0%  {bottom:0px; top:0px;}
-              50% {bottom:20px; top:0px;}
-              100% {bottom:40px; top:0px;}
+            img.CICover{
+              width:auto;
+            	max-width:75%;
+            	height:auto;
             }
     </style>
 </head>
@@ -66,8 +73,7 @@
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-            <a class="navbar-brand" href="index.html"><img src="img/icon.png" width="100" height="100"></img><strong></strong></a> </div>
-          
+            <a class="navbar-brand" href="index.html"><img src="img/icon.png" width="100" height="100"></img><strong></strong></a></div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -76,6 +82,7 @@
               <li><a href="#about-section" class="page-scroll">About</a></li>
               <li><a href="#contact-section" class="page-scroll">Contact</a></li>
               <li><a href="#invite-section" class="page-scroll">Invite</a></li>
+              <li><a href="commands.html#commands-section" target="_self">Commands</a></li>
             </ul>
           </div>
           <!-- /.navbar-collapse --> 
@@ -87,7 +94,7 @@
 <body>
         <header class="text-center" name="home">
                 <div class="intro-text">
-                  <img src="img/pfp.png" style="border-radius: 50%; position: relative; -webkit-animation-name: pfp; -webkit-animation-duration: 3.0s; animation-name: pfp; animation-duration: 3.0s; animation-iteration-count: infinite; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; animation-direction: alternate; animation-delay: 0s;" width="128px" height="128px"></img><br><br><br>
+                  <img src="img/pfp.png" style="border-radius: 50%; position: relative; -webkit-animation-name: pfp; -webkit-animation-duration: 2.5s; animation-name: pfp; animation-duration: 2.5s; animation-iteration-count: infinite; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; animation-direction: alternate;" width="128px" height="128px"></img><br><br><br>
                   
                   <h1>Welcome to <strong>Candy Music</strong></h1>
                   <p2>We provide high quality music on Discord.</p2><br><br>
@@ -167,7 +174,7 @@
               <p></p>
               <div class="space"></div>
               <p>If you wish to contact us, please click on the image below to get invited to our support server.</p>
-              <a href="https://discord.gg/82qbPBb" target="_blank"><img src="img/CI.png" /></a>
+              <a href="https://discord.gg/82qbPBb" target="_blank"><img class="CICover" src="img/CI.png" /></a>
 						</div>
 					</div>
 				</div>
@@ -182,7 +189,8 @@
               <div class="clearfix"></div>
               <p></p>
               <div class="space"></div>
-              <p>Click below to invite the bot!</p>
+              <a class="invite" href="https://discordapp.com/oauth2/authorize?permissions=53554192&scope=bot&client_id=335021561973309442" target="_blank"><h1>Click me to invite the bot!</h1></a><br><br>
+              <p>If you enjoyed using the bot, please upvote our bot on the site below.</p>
               <a href="https://discordbots.org/bot/335021561973309442">
                 <img src="https://discordbots.org/api/widget/335021561973309442.svg" alt="Discord Bots" />
               </a>
@@ -202,6 +210,13 @@
 <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
 <script type="text/javascript" src="js/jquery.isotope.js"></script> 
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="application/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    if ( window.location.hash ) {
+        smoothScroll.animateScroll(  null, window.location.hash  );
+    }
+});
+</script>
 
 <!-- Javascripts
     ================================================== --> 
