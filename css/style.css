@@ -315,6 +315,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     font-family: 'Open Sans', sans-serif;
     border-collapse: collapse;
     width: 100%;
+    overflow: scroll;
 }
 
 #commands-table info.fa{
