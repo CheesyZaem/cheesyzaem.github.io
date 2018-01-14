@@ -130,7 +130,7 @@ hr {
 }
 /* Home Style */
 header { 
-	background: url(./img/bg.png) no-repeat bottom right;
+	background: url(../img/bg.png) no-repeat bottom right;
 	background-size: cover;
 	color: #cfcfcf;
 	position: relative;
