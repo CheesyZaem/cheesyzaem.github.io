@@ -129,9 +129,8 @@ hr {
 	background-color: #FFF;
 }
 /* Home Style */
-/*../img/header-bg.jpg*/
 header { 
-	background: url(https://cdn.discordapp.com/attachments/242175117831045121/392961138247073802/floating-light-pink-stars-fade-in-and-out-against-a-pink-backdrop-looping-motion-background_spv1hisg.png) no-repeat bottom right;
+	background: url(./img/bg.png) no-repeat bottom right;
 	background-size: cover;
 	color: #cfcfcf;
 	position: relative;
